@@ -15,7 +15,7 @@ templates = Jinja2Templates(directory='templates')
 
 class ToDoCreate(BaseModel):
     title : str
-    description : str
+    description : int
     done : bool
 
 class ToDoResponse(ToDoCreate):
