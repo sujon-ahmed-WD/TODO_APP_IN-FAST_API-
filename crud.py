@@ -9,7 +9,7 @@ from fastapi import Request, Form
 from fastapi.templating import Jinja2Templates 
 from fastapi.responses import RedirectResponse 
 
-router = APIRouter()
+route = APIRouter()
 
 templates = Jinja2Templates(directory='templates') 
 
