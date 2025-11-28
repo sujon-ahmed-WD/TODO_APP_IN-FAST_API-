@@ -9,13 +9,13 @@ from fastapi import Request, Form
 from fastapi.templating import Jinja2Templates 
 from fastapi.responses import RedirectResponse 
 
-route = APIRouter()
+router = APIRouter()
 
 templates = Jinja2Templates(directory='templates') 
 
 class ToDoCreate(BaseModel):
     title : str
-    description : int
+    description : str
     done : bool
 
 class ToDoResponse(ToDoCreate):
